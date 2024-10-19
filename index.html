@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco dell'Impostore</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #word {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="word">Inizia il gioco!</div>
+    <input type="number" id="numPlayers" placeholder="Numero di giocatori" min="2">
+    <button id="startGameButton">Inizia il gioco</button>
+    <button onclick="location.reload()">restart</button>
+    <div id="playerButtons" style="display:none;"></div>
+</body>
+</html>
+
